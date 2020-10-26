@@ -1,6 +1,6 @@
 package UF2404.Recursos.E06_Excepciones;
 
-import UF2404.POJO.Paciente;
+import UF2404.POJO.Patient;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -24,9 +24,9 @@ import java.util.Scanner;
 public class E06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Paciente> p = new ArrayList<>();
+        ArrayList<Patient> p = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
-            Paciente p1 = new Paciente();
+            Patient p1 = new Patient();
         }
     }
 }

@@ -26,23 +26,23 @@ public class Utilidades implements Funciones {
     }
 
     @Override
-    public String pedirNombre() throws Exception {
+    public String pedirNombre() {
         return null;
     }
 
     @Override
-    public void imprimirNumeroLoteria(int tipoLoteria) throws Exception {
+    public void imprimirNumeroLoteria(int tipoLoteria) {
 
     }
 
     @Override
-    public float calcularVueltas(float dineroEntregado, float precioProducto) throws Exception {
+    public float calcularVueltas(float dineroEntregado, float precioProducto) {
         return 0;
     }
 
 //    @Override
 //    public Serie pedirDatosPorConsola() {
-//       
+//
 //        return null;
 //    }
 }

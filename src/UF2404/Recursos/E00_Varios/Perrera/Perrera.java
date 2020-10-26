@@ -1,6 +1,6 @@
 package UF2404.Recursos.E00_Varios.Perrera;
 
-import UF2404.POJO.Perro;
+import UF2404.POJO.Dog;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class Perrera {
     private static final String OPCION_SALIDA ="x";
 
     private static Scanner sc = new Scanner(System.in);
-    private static ArrayList<Perro> perrera = new ArrayList<>();
+    private static ArrayList<Dog> perrera = new ArrayList<>();
 
     public static void main(String[] args) {
         String menu;
@@ -50,17 +50,17 @@ public class Perrera {
      * Añadir un perro.
      */
     private static void anadirPerro() {
-        Perro p = new Perro();
+        Dog p = new Dog();
         System.out.print("Raza del perro: ");
-        p.setRaza(sc.nextLine());
+        p.setBreed(sc.nextLine());
         System.out.print("Nombre del perro: ");
-        p.setNombre(sc.nextLine());
+        p.setName(sc.nextLine());
         System.out.print("Edad del perro: ");
-        p.setEdad(Integer.parseInt(sc.nextLine()));
+        p.setAge(Integer.parseInt(sc.nextLine()));
         System.out.print("Esta vacunado? Si o No: ");
-        p.setVacunado(sc.nextLine().equalsIgnoreCase("si")||sc.nextLine().equalsIgnoreCase("sí"));
+        p.setVaccinated(sc.nextLine().equalsIgnoreCase("si")||sc.nextLine().equalsIgnoreCase("sí"));
         perrera.add(p);
-        System.out.println(p.getNombre() + " se ha añadido a la perrera.");
+        System.out.println(p.getName() + " se ha añadido a la perrera.");
     }
 
     /**
@@ -74,9 +74,9 @@ public class Perrera {
         leerAL();
         System.out.print("Que perro quieres adoptar? Escribe el nombre: ");
         String nombre = sc.nextLine();
-        for (Perro p : perrera) {
-            if (p.getNombre().equalsIgnoreCase(nombre)) {
-                System.out.println("Gracias por adoptar a " + p.getNombre() + ".");
+        for (Dog p : perrera) {
+            if (p.getName().equalsIgnoreCase(nombre)) {
+                System.out.println("Gracias por adoptar a " + p.getName() + ".");
                 perrera.remove(p);
                 return true;
             }
@@ -104,13 +104,13 @@ public class Perrera {
      */
 
     private static void init() {
-        perrera.add(new Perro("Basset hound", "Rasterator", 1, true));
-        perrera.add(new Perro("Beagle", "Bruno", 1, true));
-        perrera.add(new Perro("Pastor aleman", "Rex", 1, true));
-        perrera.add(new Perro("Boerboel", "Hugo", 1, true));
-        perrera.add(new Perro("Border collie", "Laila", 1, true));
-        perrera.add(new Perro("Boston terrier", "Kira", 1, true));
-        perrera.add(new Perro("Pastor australiano", "Rufus", 1, true));
+        perrera.add(new Dog("Basset hound", "Rasterator", 1, true));
+        perrera.add(new Dog("Beagle", "Bruno", 1, true));
+        perrera.add(new Dog("Pastor aleman", "Rex", 1, true));
+        perrera.add(new Dog("Boerboel", "Hugo", 1, true));
+        perrera.add(new Dog("Border collie", "Laila", 1, true));
+        perrera.add(new Dog("Boston terrier", "Kira", 1, true));
+        perrera.add(new Dog("Pastor australiano", "Rufus", 1, true));
     }
 
     /**
@@ -127,7 +127,7 @@ public class Perrera {
      */
 
     private static void leerAL() {
-        for (Perro p : perrera) {
+        for (Dog p : perrera) {
             System.out.println(p.toString());
         }
     }

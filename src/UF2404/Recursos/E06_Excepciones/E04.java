@@ -1,6 +1,6 @@
 package UF2404.Recursos.E06_Excepciones;
 
-import UF2404.POJO.Persona;
+import UF2404.POJO.Person;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,17 +13,17 @@ import java.util.Scanner;
  */
 public class E04 {
     public static void main(String[] args) {
-        ArrayList<Persona> personas = new ArrayList<>();
+        ArrayList<Person> personas = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         boolean isValid;
         for (int i = 0; i < 6; i++) {
-            Persona p = new Persona();
+            Person p = new Person();
             System.out.print("Introduce el nombre de la persona: ");
-            p.setNombre(sc.nextLine());
+            p.setName(sc.nextLine());
             do {
                 try {
                     System.out.print("Introduce la edad de la persona: ");
-                    p.setEdad(Integer.parseInt(sc.nextLine()));
+                    p.setAge(Integer.parseInt(sc.nextLine()));
                     isValid = true;
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
@@ -31,7 +31,7 @@ public class E04 {
                 }
             } while (!isValid);
             personas.add(p);
-            System.out.println(personas.get(i).getNombre() + " ha sido agregado.");
+            System.out.println(personas.get(i).getName() + " ha sido agregado.");
         }
     }
 }
