@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 doc/
+out/
+uml/
+src/test/
 
 ### STS ###
 .apt_generated
