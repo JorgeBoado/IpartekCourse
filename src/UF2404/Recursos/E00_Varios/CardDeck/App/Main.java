@@ -1,4 +1,4 @@
-package UF2404.Recursos.E00_Varios.CardDeck.app;
+package UF2404.Recursos.E00_Varios.CardDeck.App;
 
 import UF2404.Recursos.E00_Varios.CardDeck.POJO.PokerDeck;
 import UF2404.Recursos.E00_Varios.CardDeck.POJO.SpanishDeck;
