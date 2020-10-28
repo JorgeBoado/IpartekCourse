@@ -4,19 +4,19 @@ public class Card {
     private static final String[] SUITS = {"Clubs", "Diamonds", "Hearts", "Spades"};
 
     private int number;
-    private int suits;
+    private int suit;
 
     public Card(int number, int suits) {
         this.number = number;
-        this.suits = suits;
+        this.suit = suits;
     }
 
     public int getNumber() {
         return number;
     }
 
-    public int getSuits() {
-        return suits;
+    public int getSuit() {
+        return suit;
     }
 
     @Override
@@ -41,7 +41,7 @@ public class Card {
         }
         return "Card{" +
                 "number=" + aux +
-                ", suits='" + SUITS[suits] + '\'' +
+                ", suits='" + SUITS[suit] + '\'' +
                 '}';
     }
 }

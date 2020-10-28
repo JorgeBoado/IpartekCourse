@@ -5,6 +5,9 @@ import UF2404.Utilidades.CustomException;
 
 import java.util.Scanner;
 
+/**
+ * @author Jorge Boado
+ */
 public class E01 {
     private static final String TEMP_EXCEPTION = "TEMP_EXCEPTION";
 

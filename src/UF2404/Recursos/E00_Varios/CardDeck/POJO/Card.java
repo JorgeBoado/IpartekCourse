@@ -1,56 +1,50 @@
 package UF2404.Recursos.E00_Varios.CardDeck.POJO;
 
+/**
+ * Card class, contains the constructor and methods of Card.
+ *
+ * @author Jorge Boado
+ */
 public class Card {
-    private int number;
-    private String suits;
+    private final Number number;
+    private final Suit suit;
 
-    public Card() {
-    }
-
-    public Card(int number, String suits) {
+    /**
+     * Card constructor.
+     *
+     * @param number Number type Object.
+     * @param suit   Suit type Object.
+     */
+    public Card(Number number, Suit suit) {
         this.number = number;
-        this.suits = suits;
+        this.suit = suit;
     }
 
-    public int getNumber() {
+    /**
+     * Returns the number of the Card.
+     *
+     * @return Number type Object.
+     */
+    public Number getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    /**
+     * Returns the suit of the Card.
+     *
+     * @return Suit type Object.
+     */
+    public Suit getSuit() {
+        return suit;
     }
 
-    public String getSuits() {
-        return suits;
-    }
-
-    public void setSuits(String suits) {
-        this.suits = suits;
-    }
-
+    /**
+     * Returns the Card attr.
+     *
+     * @return Card attr in String format.
+     */
     @Override
     public String toString() {
-        String aux;
-        switch (number) {
-            case 1:
-                aux = "Ace";
-                break;
-            case 11:
-                aux = "Jack";
-                break;
-            case 12:
-                aux = "Queen";
-                break;
-            case 13:
-                aux = "King";
-                break;
-            default:
-                aux = String.valueOf(number);
-                break;
-        }
-        return "Card{" +
-                "number=" + aux +
-                ", suits='" + suits + '\'' +
-                '}';
+        return number.toString() + " of " + suit.toString();
     }
 }

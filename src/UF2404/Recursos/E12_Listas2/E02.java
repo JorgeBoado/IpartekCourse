@@ -7,6 +7,8 @@ import java.util.Arrays;
 /**
  * Creates a winner lottery number.
  * All the creation is in the Object.
+ *
+ * @author Jorge Boado
  */
 public class E02 {
     public static void main(String[] args) {

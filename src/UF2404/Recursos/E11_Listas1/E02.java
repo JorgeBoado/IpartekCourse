@@ -5,6 +5,9 @@ import UF2404.POJO.FootballPlayer;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * @author Jorge Boado
+ */
 public class E02 {
 
     private static final char LOOP_CONDITION = 's';

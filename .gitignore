@@ -6,7 +6,7 @@ target/
 doc/
 out/
 uml/
-src/test/
+/src/test/
 
 ### STS ###
 .apt_generated

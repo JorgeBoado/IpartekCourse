@@ -2,6 +2,9 @@ package UF2404.Recursos.E06_Excepciones;
 
 //NOTTODO -Ejercicio 06 Falta por especificar
 
+/**
+ * @author Jorge Boado
+ */
 public class ExcepcionListaNegra extends Exception {
     private final int codigoError;
 

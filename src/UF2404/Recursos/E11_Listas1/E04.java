@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * @author Jorge Boado
+ */
 public class E04 {
     private static final int NUMBER_OF_SUITS = 4;
     private static final int NUMBER_OF_CARDS = 13;
@@ -32,7 +35,7 @@ public class E04 {
      * @param d Card Object ArrayList.
      */
     private static void orderBySuits(ArrayList<Card> d) {
-        d.sort(Comparator.comparingInt(Card::getSuits));
+        d.sort(Comparator.comparingInt(Card::getSuit));
     }
 
     /**
