@@ -6,6 +6,7 @@ target/
 doc/
 out/
 uml/
+/src/bbdd/
 
 ### STS ###
 .apt_generated
