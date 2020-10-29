@@ -1,6 +1,6 @@
 package UF2404.Recursos.E11_Listas1;
 
-import UF2404.POJO.Students;
+import UF2404.pojo.Students;
 
 import java.util.ArrayList;
 import java.util.Scanner;

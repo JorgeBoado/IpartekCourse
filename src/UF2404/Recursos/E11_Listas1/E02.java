@@ -1,6 +1,6 @@
 package UF2404.Recursos.E11_Listas1;
 
-import UF2404.POJO.FootballPlayer;
+import UF2404.pojo.FootballPlayer;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package UF2404.POJO;
+package UF2404.pojo;
 
 /**
  * The sons will end here, so we'll put the final attr.

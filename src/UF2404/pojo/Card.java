@@ -1,4 +1,4 @@
-package UF2404.POJO;
+package UF2404.pojo;
 
 public class Card {
     private static final String[] SUITS = {"Clubs", "Diamonds", "Hearts", "Spades"};

@@ -1,4 +1,4 @@
-package UF2404.Actividad01.EjercicioB;
+package UF2404.Actividades.Actividad01.EjercicioB;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

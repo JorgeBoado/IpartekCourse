@@ -1,4 +1,4 @@
-package UF2404.POJO;
+package UF2404.pojo;
 
 import java.util.ArrayList;
 

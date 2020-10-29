@@ -1,4 +1,4 @@
 /**
  * Paquete de POJOs
  */
-package UF2404.POJO;
+package UF2404.pojo;

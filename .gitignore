@@ -24,6 +24,8 @@ uml/
 *.iws
 *.iml
 *.ipr
+*.png
+*.uml
 
 ### NetBeans ###
 /nbproject/private/

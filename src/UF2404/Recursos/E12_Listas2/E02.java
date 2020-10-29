@@ -1,6 +1,6 @@
 package UF2404.Recursos.E12_Listas2;
 
-import UF2404.POJO.BoletoEuro;
+import UF2404.pojo.BoletoEuro;
 
 import java.util.Arrays;
 

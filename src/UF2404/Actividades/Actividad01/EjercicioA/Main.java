@@ -1,4 +1,4 @@
-package UF2404.Actividad01.EjercicioA;
+package UF2404.Actividades.Actividad01.EjercicioA;
 
 import java.util.Scanner;
 

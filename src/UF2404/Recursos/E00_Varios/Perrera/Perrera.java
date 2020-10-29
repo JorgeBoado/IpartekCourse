@@ -1,6 +1,6 @@
 package UF2404.Recursos.E00_Varios.Perrera;
 
-import UF2404.POJO.Dog;
+import UF2404.pojo.Dog;
 
 import java.util.ArrayList;
 import java.util.Scanner;

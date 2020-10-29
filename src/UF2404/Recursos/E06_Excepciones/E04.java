@@ -1,6 +1,6 @@
 package UF2404.Recursos.E06_Excepciones;
 
-import UF2404.POJO.Person;
+import UF2404.pojo.Person;
 
 import java.util.ArrayList;
 import java.util.Scanner;
