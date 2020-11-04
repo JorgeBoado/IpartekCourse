@@ -3,7 +3,9 @@ package UF2404.Actividades.Actividad03;
 import UF2404.Actividades.Actividad03.Modelo.AppGestion;
 import UF2404.Actividades.Actividad03.Modelo.pojo.ImplementacionLibroDAO;
 import UF2404.Actividades.Actividad03.Modelo.pojo.Libro;
+import UF2404.Actividades.Actividad03.Utility.OrderByName;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -45,7 +47,9 @@ public class Main extends AppGestion {
      * Lista todos los recursos
      */
     private static void listar() {
-        for (Libro l : mDAO.getAll()) {
+        ArrayList<Libro> libros = new ArrayList<>(mDAO.getAll());
+        libros.sort(new OrderByName());
+        for (Libro l : libros) {
             System.out.println(l.toString());
         }
     }
@@ -72,7 +76,7 @@ public class Main extends AppGestion {
             try {
                 System.out.print("Introduce el numero de paginas: ");
                 l.setNumeroPaginas(Integer.parseInt(sc.nextLine().trim()));
-                isValid=true;
+                isValid = true;
             } catch (Exception e) {
                 System.out.println("Tienes que introducir un numero de paginas no letras.");
                 isValid = false;
