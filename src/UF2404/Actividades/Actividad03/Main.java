@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class Main extends AppGestion {
     private static final String NOMBRE_POJO = "libro";
+
     private static final ImplementacionLibroDAO mDAO = ImplementacionLibroDAO.getInstance();
     private static final Scanner sc = new Scanner(System.in);
 
@@ -93,11 +94,20 @@ public class Main extends AppGestion {
      * Elimina un Recurso
      */
     private static void eliminar() {
+        boolean isValid;
         System.out.print("Introduce la ID del libro que quieres borrar: ");
-        if (mDAO.delete(Integer.parseInt(sc.nextLine()))) {
-            System.out.println("Borrado.");
-        } else {
-            System.out.println("No existe un libro con esa ID.");
-        }
+        do {
+            try {
+                if (mDAO.delete(Integer.parseInt(sc.nextLine()))) {
+                    System.out.println("Borrado.");
+                } else {
+                    System.out.println("No existe un libro con esa ID.");
+                }
+                isValid = true;
+            } catch (Exception e) {
+                System.out.println("Tienes que introducir un numero.");
+                isValid = false;
+            }
+        } while (!isValid);
     }
 }
